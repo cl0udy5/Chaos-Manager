@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d5cfce7e32e25984ca32c8225be01f5a
+guid: 38ef3ea27341f744db077bcc74eb2ed4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttons_0
+      name: buttons 1_0
       rect:
         serializedVersion: 2
         x: 14
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e05a32622675df42b8781455d19acaf
-      internalID: 22941864
+      spriteID: fd241db8910c8ee4d8ec4c173bd740e4
+      internalID: 856062640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_1
+      name: buttons 1_1
       rect:
         serializedVersion: 2
         x: 270
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6580b76103145404589db68d353aed60
-      internalID: -1718291676
+      spriteID: 5b98c45c2f4f2bb448c7b504a259c58a
+      internalID: -589636435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_2
+      name: buttons 1_2
       rect:
         serializedVersion: 2
         x: 272
         y: 175
         width: 47
-        height: 54
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0763fa580a6f8941bbccd810de04923
-      internalID: 1149659702
+      spriteID: d304a2341318c9d47aaf314b2e957f1d
+      internalID: 1785169921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_3
+      name: buttons 1_3
       rect:
         serializedVersion: 2
         x: 272
@@ -193,17 +193,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453e424feb293b34bb21bd561e8ad557
-      internalID: 800789780
+      spriteID: cb3e7f968c8198a4e9d05156a774a8df
+      internalID: -893380712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_4
+      name: buttons 1_4
       rect:
         serializedVersion: 2
-        x: 310
+        x: 274
+        y: 87
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a884a048f2e4a4ca203afb096af2dc
+      internalID: -818010653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons 1_5
+      rect:
+        serializedVersion: 2
+        x: 274
         y: 55
         width: 41
         height: 28
@@ -214,19 +235,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b4dc14784c7714087a718b1add352b
-      internalID: 1528334104
+      spriteID: 52cd43deb69a3bf4fa5261aef545007f
+      internalID: 155283350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_5
+      name: buttons 1_6
       rect:
         serializedVersion: 2
-        x: 324
-        y: 216
-        width: 3
+        x: 332
+        y: 207
+        width: 1
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -235,8 +256,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2a6f4d22e19c4e4da02a177c45874bb
-      internalID: 1504334393
+      spriteID: 41beea785fa76ec43883a87aed6d1310
+      internalID: 795843576
       vertices: []
       indices: 
       edges: []
@@ -252,12 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      buttons_2: 1149659702
-      buttons_0: 22941864
-      buttons_4: 1528334104
-      buttons_1: -1718291676
-      buttons_5: 1704311358
-      buttons_3: 800789780
+      buttons 1_0: 856062640
+      buttons 1_4: -818010653
+      buttons 1_5: 155283350
+      buttons 1_3: -893380712
+      buttons 1_6: 795843576
+      buttons 1_2: 1785169921
+      buttons 1_1: -589636435
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
