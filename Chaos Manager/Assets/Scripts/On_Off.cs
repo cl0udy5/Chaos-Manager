@@ -10,14 +10,21 @@ public class On_Off : MonoBehaviour
     [SerializeField] Sprite turnedOff;
     [SerializeField] GameObject NumberOfCases;
     [SerializeField] GameObject glare;
-    bool isTurnedOn;
+    public bool isTurnedOn;
     
     void Start()
     {
+        screen.sprite = turnedOff;
         NumberOfCases.SetActive(false);
         glare.SetActive(false);
     }
 
+    public void NewBackGroundDay()
+    {
+        screen.sprite = turnedOff;
+        NumberOfCases.SetActive(false);
+        glare.SetActive(false);
+    }
     public void Pressed()
     {
         if(isTurnedOn)
