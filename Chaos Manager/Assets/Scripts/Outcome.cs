@@ -7,11 +7,9 @@ using UnityEngine.UI;
 public class Outcome : ScriptableObject
 {
     public int iterator_i = 0;
-    public string[] ChaoticOutcomes = new string[21];
-    public int[] OutcomesInGeneral = new int[21];
-    public int[] SliderOfTheDay = new int[3];
+    public string[] ChaoticOutcomes = new string[11];
+    public int[] OutcomesInGeneral = new int[11];
     public int day_iterator_i = 0;
-    public bool[] WasTheDayGood = new bool[3];
 
     public void UrChaoticChoice()
     {
@@ -20,5 +18,14 @@ public class Outcome : ScriptableObject
     public void UrNonChaoticChoice()
     {
         OutcomesInGeneral[iterator_i] = -1;
+    }
+    void Start()
+    {
+        day_iterator_i = 0;
+        iterator_i = 0;
+        for(int i = 0; i < 21; i++)
+        {
+            OutcomesInGeneral[i] = 0;
+        }
     }
 }

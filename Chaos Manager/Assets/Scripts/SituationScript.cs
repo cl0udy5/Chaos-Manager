@@ -13,22 +13,25 @@ public class SituationScript : MonoBehaviour
     [SerializeField] Sprite NonChaoticOutcome;
     [SerializeField] TextMeshProUGUI Outcome_text;
     [TextArea(2, 6)]
-    [SerializeField] string ChaoticOutcomeText;
+    public string ChaoticOutcomeText;
     [TextArea(2, 6)]
-    [SerializeField] string NonChaoticOutcomeText;
+    public string NonChaoticOutcomeText;
     [SerializeField] GameObject cross;
     [SerializeField] Button leftbutton;
     [SerializeField] Button rightbutton;
-
+    [SerializeField] bool isthereanALTERNATIVEOUTCOME;
+    [SerializeField] bool isALTERNATIVEOUTCOMEcomesafternegative;
+    [SerializeField] string alternativeOutcomeText;
+    [SerializeField] int ChangeOfKarma;
+    [SerializeField] int AlternativeChangeOfKarma;
+    [SerializeField] Sprite alternativeOutcomePhoto;
+    [SerializeField] int numberOfNessesaryPreviousOutcome;
+    [SerializeField] int nessesaryALTERNATIVEOUTCOME;
     void Start()
     {
         cross.SetActive(false);
     }
 
-    void Update()
-    {
-        
-    }
     public void LeftChoise()
     {
         if (Data.ChaoticOutcomes[Data.iterator_i] == "left")
@@ -57,15 +60,34 @@ public class SituationScript : MonoBehaviour
     {
         if (Data.OutcomesInGeneral[Data.iterator_i] == 1)
         {
-            SituationPhoto.sprite = ChaoticOutcome;
-            ChaosSlider.value += 5;
-            Outcome_text.text = ChaoticOutcomeText;
+            if(isthereanALTERNATIVEOUTCOME && isALTERNATIVEOUTCOMEcomesafternegative && Data.OutcomesInGeneral[numberOfNessesaryPreviousOutcome] == nessesaryALTERNATIVEOUTCOME)
+            {
+                SituationPhoto.sprite = alternativeOutcomePhoto;
+                ChaosSlider.value += AlternativeChangeOfKarma;
+                Outcome_text.text = alternativeOutcomeText;
+            }
+            else
+            {
+                SituationPhoto.sprite = ChaoticOutcome;
+                ChaosSlider.value += ChangeOfKarma;
+                Outcome_text.text = ChaoticOutcomeText;
+            }
+            
         }
         else
         {
-            SituationPhoto.sprite = NonChaoticOutcome;
-            ChaosSlider.value -= 5;
-            Outcome_text.text = NonChaoticOutcomeText;
+            if(isthereanALTERNATIVEOUTCOME && !isALTERNATIVEOUTCOMEcomesafternegative && Data.OutcomesInGeneral[numberOfNessesaryPreviousOutcome] == nessesaryALTERNATIVEOUTCOME)
+            {
+                SituationPhoto.sprite = alternativeOutcomePhoto;
+                ChaosSlider.value += AlternativeChangeOfKarma;
+                Outcome_text.text = alternativeOutcomeText;
+            }
+            else
+            {
+                SituationPhoto.sprite = NonChaoticOutcome;
+                ChaosSlider.value -= ChangeOfKarma;
+                Outcome_text.text = NonChaoticOutcomeText;
+            }
         }
         Data.iterator_i += 1;
         cross.SetActive(true);

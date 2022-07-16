@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TypicalDay : MonoBehaviour
 {
-    [SerializeField] GameObject[] Situations = new GameObject[7]; 
+    [SerializeField] GameObject[] Situations = new GameObject[11]; 
     int i;
     bool isOn = false;
     public void ButtonPushed()
@@ -36,14 +36,24 @@ public class TypicalDay : MonoBehaviour
     }
     public void ChangeSituations()
     {
-        i++;
-        Situations[i].SetActive(true);
-        Situations[i-1].SetActive(false);
-        
+        if(i <= 10)
+        {
+            i++;
+            Situations[i].SetActive(true);
+            Situations[i-1].SetActive(false);
+        }
+        else
+        {
+            //EndOfTheDay();
+        }
     }
-    public void NewDay()
+    public void BadEnding()
     {
-
+        Debug.Log("Bad");
+    }
+    public void GoodEnding()
+    {
+        Debug.Log("Good");
     }
 
 }

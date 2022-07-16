@@ -7,7 +7,7 @@ public class SliderScript : MonoBehaviour
 {
     [SerializeField] Slider mainslider;
     [SerializeField] Slider nessesaryslaider;
-    [SerializeField] Outcome Data;
+    public TypicalDay mainDay;
     public void SliderStartOfTheDay()
     {
         mainslider.value = 25f;
@@ -15,7 +15,8 @@ public class SliderScript : MonoBehaviour
     
     void Start()
     {
-
+        mainDay = FindObjectOfType<TypicalDay>();
+        SliderEndOfTheDay();
     }
 
     void Update()
@@ -24,13 +25,13 @@ public class SliderScript : MonoBehaviour
     }
     public void SliderEndOfTheDay()
     {
-        if(mainslider.value >= (nessesaryslaider.value - 10) && mainslider.value <= (nessesaryslaider.value + 10))
+        if(mainslider.value >= 20 && mainslider.value <= 32)
         {
-            Data.WasTheDayGood[Data.day_iterator_i] = true;
+            mainDay.GoodEnding();
         }
         else
         {
-            Data.WasTheDayGood[Data.day_iterator_i] = true;
+            mainDay.BadEnding();
         }
     }
 }

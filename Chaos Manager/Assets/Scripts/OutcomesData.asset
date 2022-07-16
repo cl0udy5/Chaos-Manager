@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4842daaf6e4e144882998ece472674, type: 3}
   m_Name: OutcomesData
   m_EditorClassIdentifier: 
-  iterator_i: 2
+  iterator_i: 0
   ChaoticOutcomes:
   - left
   - right
   - right
+  - right
+  - right
+  - right
+  - right
+  - right
   - 
   - 
   - 
@@ -30,12 +35,5 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  OutcomesInGeneral: 0100000001000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-  SliderOfTheDay: 19000000280000000a000000
+  OutcomesInGeneral: 0100000001000000ffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   day_iterator_i: 0
-  WasTheDayGood: 000000
