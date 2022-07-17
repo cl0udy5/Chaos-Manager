@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8509804, g: 0.28627455, b: 0.29163846, a: 0.46666667}
+  m_Color: {r: 0.4712976, g: 0.6317204, b: 0.8396226, a: 0.46666667}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4157,7 +4157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728264359874, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Another caregiver notices a child with pills
+      value: Another techer notices a child with pills
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728264359874, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -7236,9 +7236,9 @@ MonoBehaviour:
   AlienSpeaking: {fileID: 1919280316}
   lines:
   - '???: Oh..Hi..Don''t mind me staring at you'
+  - '???: And sorry for lags in comunication system, this old crap barely works already.'
   - '???: So...This is your first day...Scared,huh?'
-  - '???: I was too...'
-  - '???: My name is Crompy, by the way'
+  - '???: By the way, my name is Crompy'
   - 'Crompy: You are probably familiar with what we are doing here'
   - 'Crompy: But just as a reminder...'
   - 'Crompy: We, and you in particular, are here to keep the balance'
@@ -7250,8 +7250,8 @@ MonoBehaviour:
   - Crompy:Every time you will make a desicion the value will change
   - Crompy:It depends on the outcome, "good" or "bad" if you wish
   - Crompy:There is also a value that you have to reach by the end of each day
-  - Crompy:Above it you will see the "counter", it will show you, how many fates
-    are left for you to decide
+  - Crompy:Above it you will see the "counter", it will show you how many fates are
+    left for you to decide
   - Crompy:Time works differently here, so your so called "day" won't end until you
     finish your work
   - Crompy:Yeah, by the way...

@@ -75,7 +75,7 @@ public class DialogueScript : MonoBehaviour
                     AskingPhoto.SetActive(false);
                     TellingPhoto.SetActive(true);
                     break;
-                case 11:
+                case 10:
                     TellingPhoto.SetActive(false);
                     ShowingPhoto.SetActive(true);
                     break;
