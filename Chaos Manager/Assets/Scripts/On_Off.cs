@@ -11,6 +11,7 @@ public class On_Off : MonoBehaviour
     [SerializeField] GameObject NumberOfCases;
     [SerializeField] GameObject glare;
     [SerializeField] Outcome Data;
+    [SerializeField] AudioSource PowerOnOffAudio;
     public bool isTurnedOn;
     
     void Start()
@@ -23,6 +24,7 @@ public class On_Off : MonoBehaviour
 
     public void Pressed()
     {
+        PowerOnOffAudio.Play();
         if(isTurnedOn)
         {
             screen.sprite = turnedOff;

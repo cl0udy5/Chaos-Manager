@@ -27,6 +27,7 @@ public class SituationScript : MonoBehaviour
     [SerializeField] Sprite alternativeOutcomePhoto;
     [SerializeField] int numberOfNessesaryPreviousOutcome;
     [SerializeField] int nessesaryALTERNATIVEOUTCOME;
+    [SerializeField] AudioSource Sound;
     void Start()
     {
         cross.SetActive(false);
@@ -58,6 +59,7 @@ public class SituationScript : MonoBehaviour
 
     public void AnyChoice()
     {
+        Sound.Play();
         if (Data.OutcomesInGeneral[Data.iterator_i] == 1)
         {
             if(isthereanALTERNATIVEOUTCOME && isALTERNATIVEOUTCOMEcomesafternegative && Data.OutcomesInGeneral[numberOfNessesaryPreviousOutcome] == nessesaryALTERNATIVEOUTCOME)

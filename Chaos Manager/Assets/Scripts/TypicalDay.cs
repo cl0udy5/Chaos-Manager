@@ -12,6 +12,7 @@ public class TypicalDay : MonoBehaviour
     [SerializeField] SliderScript myslider;
     [SerializeField] GameObject BadEnd;
     [SerializeField] GameObject GoodEnd;
+    [SerializeField] AudioSource Sound;
     int i;
     bool isOn = false;
     public void ButtonPushed()
@@ -46,6 +47,7 @@ public class TypicalDay : MonoBehaviour
     }
     public void ChangeSituations()
     {
+        Sound.Play();
         if(i < 10)
         {
             i++;

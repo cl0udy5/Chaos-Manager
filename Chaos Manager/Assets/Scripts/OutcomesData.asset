@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4842daaf6e4e144882998ece472674, type: 3}
   m_Name: OutcomesData
   m_EditorClassIdentifier: 
-  iterator_i: 0
+  iterator_i: 1
   ChaoticOutcomes:
   - left
   - right
@@ -35,7 +35,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  OutcomesInGeneral: 0100000001000000ffffffff01000000ffffffff01000000ffffffff01000000ffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  OutcomesInGeneral: ffffffff01000000ffffffff01000000ffffffff01000000ffffffff01000000ffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   day_iterator_i: 0
-  isChoosed: 1
-  isIntroductionover: 0
+  isChoosed: 0
+  isIntroductionover: 1

@@ -10,12 +10,13 @@ public class SliderScript : MonoBehaviour
     public TypicalDay mainDay;
     public void SliderStartOfTheDay()
     {
-        mainslider.value = 25f;
+        
     }
     
     void Start()
     {
         mainDay = FindObjectOfType<TypicalDay>();
+        mainslider.value = 25f;
     }
 
     void Update()

@@ -79,11 +79,11 @@ public class DialogueScript : MonoBehaviour
                     TellingPhoto.SetActive(false);
                     ShowingPhoto.SetActive(true);
                     break;
-                case 16:
+                case 17:
                     ShowingPhoto.SetActive(false);
                     IdlePhoto.SetActive(true);
                     break;
-                case 19:
+                case 21:
                     IdlePhoto.SetActive(false);
                     AngryPhoto.SetActive(true);
                     break;
