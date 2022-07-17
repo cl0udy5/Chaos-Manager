@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 686, y: 6}
+  m_AnchoredPosition: {x: 680, y: -0}
   m_SizeDelta: {x: 124.136, y: 116.0736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &150824423
@@ -3741,7 +3741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419828, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419831, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_Pivot.x
@@ -3849,7 +3849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465297, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 90
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729517456994, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
@@ -7258,7 +7258,7 @@ MonoBehaviour:
   - Crompy:Because you are new here,  you will be controlling the most boring place
     in universe
   - Crompy:Earth....
-  - Crompy:So, good luck. Be that chaos, god, however you want to call it...
+  - Crompy:So, good luck. Be that chaos, god, whatever you want to call it...
   - Crompy:Last thing..I know what jokes you have in mind..Disgusting..
   textSpeed: 0.1
   TheBeggining: {fileID: 1872838124}
