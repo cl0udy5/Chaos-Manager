@@ -18,6 +18,7 @@ public class GoodEndingMonologue : MonoBehaviour
     [SerializeField] On_Off computer;
     [SerializeField] GameObject Screen;
     [SerializeField] GameObject ParentScene;
+    [SerializeField] GameObject finalText;
     public Button on_off;
 
     public void Start()
@@ -81,8 +82,7 @@ public class GoodEndingMonologue : MonoBehaviour
             ParentScene.SetActive(false);
             gameObject.SetActive(false);
             Screen.SetActive(false);
-            // computer.Pressed();
-            
+            finalText.SetActive(true);   
         }
     }
 }

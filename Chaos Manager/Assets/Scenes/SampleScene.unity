@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 680, y: 6}
+  m_AnchoredPosition: {x: 686, y: 6}
   m_SizeDelta: {x: 124.136, y: 116.0736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &150824423
@@ -1112,8 +1112,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Nancy and her friend decided to have a tea party, the woman began to
         prepare for a visit. Meanwhile, the neighbor's dog has climbed into the yard
-        and is heading towards the cows. Will Nancy become aware of the presence
-        of danger before leaving or will something bad happen?
+        and is heading towards the cows.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -1126,6 +1125,10 @@ PrefabInstance:
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSizeBase
       value: 26.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186434728313690139, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729159341921, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -1151,6 +1154,10 @@ PrefabInstance:
       propertyPath: ChaosSlider
       value: 
       objectReference: {fileID: 1998910019}
+    - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: ChangeOfKarma
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcome
       value: 
@@ -1935,7 +1942,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 649bf8ff693f2ce4bad2f466e9b17a0c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2051,11 +2058,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1872838123}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 740.8, y: 216.4}
+  m_AnchoredPosition: {x: 738.0306, y: 215.73892}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491156412
@@ -2180,6 +2187,144 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &534928626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534928627}
+  - component: {fileID: 534928629}
+  - component: {fileID: 534928628}
+  m_Layer: 5
+  m_Name: FinalText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &534928627
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534928626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1872838123}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 98.46106, y: -16}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &534928628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534928626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Thanks for playing our first game!<3
+
+    To start again and see how you
+    can change the story, please restart the game'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6c2a716997c533488f2323c06054232, type: 2}
+  m_sharedMaterial: {fileID: 2321085977527588635, guid: f6c2a716997c533488f2323c06054232, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -589.001, y: -341.69232, z: -284.34534, w: -468.33356}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &534928629
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534928626}
+  m_CullTransparentMesh: 1
 --- !u!1 &557864942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,7 +2529,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1872838123}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2425,7 +2570,7 @@ PrefabInstance:
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
       value: Richard will have to write a final exam, on which a lot depends in his
-        later life, but he didn't  learn much. His only bet is luck.
+        later life, but he didn't learn much. His only bet is luck.(you)
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729159341921, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -2452,6 +2597,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1998910019}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: ChangeOfKarma
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcome
       value: 
       objectReference: {fileID: -258775871, guid: 4702a7b25bc64254fb0ac529c1ef19d0, type: 3}
@@ -2461,13 +2610,12 @@ PrefabInstance:
       objectReference: {fileID: 1899174162, guid: 4702a7b25bc64254fb0ac529c1ef19d0, type: 3}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcomeText
-      value: Richard couldn't write anything. His parents are terribly unhappy, he
-        will have to forget about sport, no one is waiting for him at home.
+      value: "Richard couldn't write anything. His parents were disappointed and
+        he will have to forget about that \r\ninternship he was dreaming of...."
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: NonChaoticOutcomeText
-      value: The guy was able to write exams perfectly, what luck! A good university
-        is guaranteed to him.
+      value: The guy was able to write exams perfectly, what a luck!
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419828, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_Name
@@ -2563,8 +2711,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Goes in for sport, plays football. Lives with his father, mother and
-        two sisters. Family is not on good terms.
+      value: Goes in for sport, plays football. Lives with his parents. Family is
+        not on good terms.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -2873,7 +3021,7 @@ MonoBehaviour:
   lines:
   - 'Crompy: To be honest, Im disappointed'
   - 'Crompy: You would definitely break the balance'
-  - 'Crompy: If this were real cases of course'
+  - 'Crompy: If these were real cases of course'
   - 'Crompy: Yep, you failed the test'
   - 'Crompy: Being a "god" is hard isn''t it?'
   - 'Crompy: Or whatever your species call it'
@@ -2890,6 +3038,7 @@ MonoBehaviour:
   Screen: {fileID: 473586056}
   Data: {fileID: 11400000, guid: 9c3b1ba3a0b339f40898e4e07ba8a860, type: 2}
   on_off: {fileID: 150824423}
+  finalText: {fileID: 534928626}
 --- !u!1 &745252414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3437,7 @@ MonoBehaviour:
   computer: {fileID: 1872838124}
   Screen: {fileID: 473586056}
   ParentScene: {fileID: 1084364812}
+  finalText: {fileID: 534928626}
   on_off: {fileID: 150824423}
 --- !u!1 &875185486
 GameObject:
@@ -3591,7 +3741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419828, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419831, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_Pivot.x
@@ -3679,8 +3829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Has an ideal life, his own compny, wife and two kids. He is a very well-read
-        and intelligent man.
+      value: 'Has an pretty happy life, his own  little company, wife and two kids. '
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -3694,17 +3843,34 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 34
       objectReference: {fileID: 0}
+    - target: {fileID: 5186434729446465297, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -292
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186434729446465297, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5186434729517456994, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
       value: Carlos Alvarado, 30
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729806193620, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: However,  very forgetful.  He often  forgets to pay the bills.
+      value: However,he is very forgetful.  He often forgets to pay the bills and
+        borrows money from his friends.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729806193620, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186434729806193620, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: m_margin.w
+      value: -90.31409
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186434729806193620, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: m_margin.x
+      value: -18.233032
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729806193620, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSizeBase
@@ -3716,7 +3882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729806193621, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -64
+      value: -35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a80363ec608646946802105766691142, type: 3}
@@ -4049,7 +4215,7 @@ PrefabInstance:
       objectReference: {fileID: 1187952334}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChangeOfKarma
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcome
@@ -4061,9 +4227,9 @@ PrefabInstance:
       objectReference: {fileID: 601594090, guid: 79036cccca777bc47824f1addc883cbf, type: 3}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcomeText
-      value: For the child, the dose turned out to be too big, the caregivers had
-        to call an ambulance. Joyce has been fired, further libel will take place
-        in court.
+      value: For the child, the dose turned out to be too big, the teachers had to
+        call an ambulance. Joyce was fired.It is only a matter of time for her to
+        be taken to court..
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: NonChaoticOutcomeText
@@ -4942,7 +5108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817153297147504121, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: wait for a salary
+      value: wait for the salary
       objectReference: {fileID: 0}
     - target: {fileID: 4817153297147504121, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -4962,7 +5128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728264359874, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Ask for a refund
+      value: Ask for to return the money
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728264359875, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_LocalScale.x
@@ -4979,8 +5145,7 @@ PrefabInstance:
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
       value: Recently, Ronald lent his friend a fairly large amount. As usual, returning
-        home from work, the man realizes that all the documents, money and valuables
-        were stolen.
+        home from work, the man realizes that money and all the documents were stolen.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -5028,13 +5193,13 @@ PrefabInstance:
       objectReference: {fileID: 1280774454, guid: 6a90467907657aa4f85fd8a190e28925, type: 3}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcomeText
-      value: Ronald did not live, but survived the month. He was able to restore
-        the documents, but he lost a lot.
+      value: Ronald did not live, but survived through the month. He was able to
+        restore the documents, but he lost a lot.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: NonChaoticOutcomeText
-      value: Ronald's friend returned the debt to him and even offered to help restore
-        documents. It seems things are looking up.
+      value: Ronald's friend returned the money to him and even offered help to restore
+        the documents. It seems like things are getting better.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: alternativeOutcomeText
@@ -5661,11 +5826,11 @@ RectTransform:
   m_Children:
   - {fileID: 1504976670}
   m_Father: {fileID: 1872838123}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 740.6695, y: 213.96103}
+  m_AnchoredPosition: {x: 737.9, y: 213.29999}
   m_SizeDelta: {x: 222.5917, y: 59.9106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543997889
@@ -5965,7 +6130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Student at a technical university. Works in local restourant.
+      value: Student at a tech university. Works in a local restourant.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -6175,7 +6340,7 @@ PrefabInstance:
       objectReference: {fileID: 1998910019}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChangeOfKarma
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcome
@@ -6187,7 +6352,7 @@ PrefabInstance:
       objectReference: {fileID: -589400562, guid: 6009aed6137fbbd4b890d52f43ce6f94, type: 3}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcomeText
-      value: The bartender called the police, now the law will deal with the parasite.
+      value: The bartender called the police, now the law will deal with this parasite.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: NonChaoticOutcomeText
@@ -6198,7 +6363,7 @@ PrefabInstance:
       propertyPath: alternativeOutcomeText
       value: This time the bartender let Philip go, but next time he will demand
         double payment. However, the time is already late and the guy was not alone
-        in the dark alley. Looks like Fred is out of cash again
+        in the dark alley. Looks like Fred was out of cash again
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: alternativeOutcomePhoto
@@ -6206,7 +6371,7 @@ PrefabInstance:
       objectReference: {fileID: -1625013452, guid: 6009aed6137fbbd4b890d52f43ce6f94, type: 3}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: AlternativeChangeOfKarma
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: isthereanALTERNATIVEOUTCOME
@@ -6564,7 +6729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Sherry, as usual, decided to invite her friend for a cup of tea. The
+      value: Sherry, as usual, decided to invite her friend for a cup of tea. Her
         husband left for work. Suddenly, Sherry felt very bad.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
@@ -6574,6 +6739,10 @@ PrefabInstance:
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSizeBase
       value: 31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186434728313690138, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -133
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729159341921, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -6613,19 +6782,18 @@ PrefabInstance:
       objectReference: {fileID: 1113735939, guid: 76843e790c52c7647af45907605f8368, type: 3}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: ChaoticOutcomeText
-      value: At the same time, Sherry's friend Nancy came to see her. She saw the
-        condition of the woman and called an ambulance.
+      value: At the same time, Sherry's friend Nancy came to see her. She saw called
+        an ambulance.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: NonChaoticOutcomeText
       value: The man returned home and saw his wife. He reacted quickly and brought
-        her to her senses, everything worked out
+        her back to life, everything worked out
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: alternativeOutcomeText
       value: Sherry felt worse and worse, but there was no help nearby. When the
-        woman was noticed, she was very ill. They managed to save her, but now she
-        is afraid to be alone.
+        husband returned, it was already too late.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: alternativeOutcomePhoto
@@ -6745,8 +6913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: 'Lives in a small village with her husband. Doesn''t do anything, likes
-        to discuss the villagers. '
+      value: Lives in a small village with her husband. Doesn't really do anything.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -6778,11 +6945,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729806193621, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -285
+      value: -279
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729806193621, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83
+      value: -60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a80363ec608646946802105766691142, type: 3}
@@ -6883,6 +7050,7 @@ RectTransform:
   - {fileID: 606386605}
   - {fileID: 150824422}
   - {fileID: 1401278913}
+  - {fileID: 534928627}
   - {fileID: 584579465}
   - {fileID: 491156411}
   - {fileID: 1998910018}
@@ -7301,9 +7469,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: Patricia's family decided to get out into nature and have a picnic.
-        While the parents were talking, the girl wanted to play with fire in the
-        barbecue. Will the parents notice?
+      value: Patricia's family decided to get out of town to have  a picnic. While
+        the parents were talking, the girl wanted to play with fire in the barbecue.
+        Will the parents notice?
       objectReference: {fileID: 0}
     - target: {fileID: 5186434728313690133, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -7470,7 +7638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_text
-      value: There is not much to say bout this little devil.
+      value: There is not much to say about this little devil.
       objectReference: {fileID: 0}
     - target: {fileID: 5186434729446465296, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_fontSize
@@ -7548,11 +7716,11 @@ RectTransform:
   - {fileID: 1785724905}
   - {fileID: 202310795}
   m_Father: {fileID: 1872838123}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 740.6695, y: 213.96103}
+  m_AnchoredPosition: {x: 737.9, y: 213.3}
   m_SizeDelta: {x: 222.5917, y: 59.9106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998910019
@@ -7740,6 +7908,10 @@ PrefabInstance:
       propertyPath: ChaosSlider
       value: 
       objectReference: {fileID: 1998910019}
+    - target: {fileID: 5186434729377419824, guid: a80363ec608646946802105766691142, type: 3}
+      propertyPath: ChangeOfKarma
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5186434729377419828, guid: a80363ec608646946802105766691142, type: 3}
       propertyPath: m_Name
       value: Situation 1

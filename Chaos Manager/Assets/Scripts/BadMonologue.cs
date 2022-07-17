@@ -21,6 +21,7 @@ public class BadMonologue : MonoBehaviour
     [SerializeField] GameObject Screen;
     [SerializeField] Outcome Data;
     [SerializeField] Button on_off;
+    [SerializeField] GameObject finalText;
 
     public void Start()
     {
@@ -90,6 +91,7 @@ public class BadMonologue : MonoBehaviour
             ParentScene.SetActive(false);
             gameObject.SetActive(false);
             Screen.SetActive(false);
+            finalText.SetActive(true);
         }
     }
 }
