@@ -22,6 +22,9 @@ MonoBehaviour:
   - right
   - right
   - right
+  - right
+  - left
+  - right
   - 
   - 
   - 
@@ -32,8 +35,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  OutcomesInGeneral: 0100000001000000ffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  OutcomesInGeneral: 0100000001000000ffffffff01000000ffffffff01000000ffffffff01000000ffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   day_iterator_i: 0
+  isChoosed: 1
+  isIntroductionover: 0

@@ -7,6 +7,11 @@ using UnityEngine.UI;
 public class TypicalDay : MonoBehaviour
 {
     [SerializeField] GameObject[] Situations = new GameObject[11]; 
+    [SerializeField] GameObject cross;
+    [SerializeField] Outcome Data;
+    [SerializeField] SliderScript myslider;
+    [SerializeField] GameObject BadEnd;
+    [SerializeField] GameObject GoodEnd;
     int i;
     bool isOn = false;
     public void ButtonPushed()
@@ -15,11 +20,16 @@ public class TypicalDay : MonoBehaviour
         {
             Situations[i].SetActive(false);
             isOn = false;
+            cross.SetActive(false);
         }
         else
         {
             Situations[i].SetActive(true);
             isOn = true;
+            if(Data.isChoosed)
+            {
+                cross.SetActive(true);
+            }
         }
         
 
@@ -36,24 +46,32 @@ public class TypicalDay : MonoBehaviour
     }
     public void ChangeSituations()
     {
-        if(i <= 10)
+        if(i < 10)
         {
             i++;
-            Situations[i].SetActive(true);
             Situations[i-1].SetActive(false);
+            cross.SetActive(false);
+            Invoke("Switch", 0.5f);
+            Data.isChoosed = false;
         }
         else
         {
-            //EndOfTheDay();
+            myslider.SliderEndOfTheDay();
         }
+    }
+    void Switch()
+    {
+        Situations[i].SetActive(true);
     }
     public void BadEnding()
     {
-        Debug.Log("Bad");
+        BadEnd.SetActive(true);
+        gameObject.SetActive(false);
     }
     public void GoodEnding()
     {
-        Debug.Log("Good");
+        GoodEnd.SetActive(true);
+        gameObject.SetActive(false);
     }
 
 }

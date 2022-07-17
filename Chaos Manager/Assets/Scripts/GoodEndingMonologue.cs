@@ -2,32 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class DialogueScript : MonoBehaviour
+using UnityEngine.UI;
+public class GoodEndingMonologue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public AudioSource AlienSpeaking;
     public string[] lines;
     public float textSpeed;
-    public On_Off TheBeggining;
     private int index;
-    [SerializeField] GameObject ParentScene;
-    [Header("Timer")]
     [SerializeField] GameObject IdlePhoto;
     [SerializeField] GameObject ShowingPhoto;
     [SerializeField] GameObject AngryPhoto;
     [SerializeField] GameObject TellingPhoto;
     [SerializeField] GameObject AskingPhoto;
-    [SerializeField] TypicalDay Screen;
-    [SerializeField] Outcome Data;
+    [SerializeField] On_Off computer;
+    [SerializeField] GameObject Screen;
+    [SerializeField] GameObject ParentScene;
+    public Button on_off;
 
     public void Start()
     {
         gameObject.SetActive(true);
         textComponent.text = string.Empty;
+        computer = FindObjectOfType<On_Off>();
         StartDialogue();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
@@ -68,37 +68,21 @@ public class DialogueScript : MonoBehaviour
             switch (index)
             {
                 case 1:
-                    IdlePhoto.SetActive(false);
-                    AskingPhoto.SetActive(true);
-                    break;
-                case 6:
-                    AskingPhoto.SetActive(false);
-                    TellingPhoto.SetActive(true);
-                    break;
-                case 11:
                     TellingPhoto.SetActive(false);
-                    ShowingPhoto.SetActive(true);
-                    break;
-                case 16:
-                    ShowingPhoto.SetActive(false);
-                    IdlePhoto.SetActive(true);
-                    break;
-                case 19:
-                    IdlePhoto.SetActive(false);
-                    AngryPhoto.SetActive(true);
+                    AskingPhoto.SetActive(true);
                     break;
             }
             StartCoroutine(TypeLine());
         }
         else
         {
-            TheBeggining = FindObjectOfType<On_Off>();
-            gameObject.SetActive(false);
+            //on_off = GetComponent<Button>();
+            on_off.interactable = false;
             ParentScene.SetActive(false);
-            TheBeggining.Pressed();
-            Screen = FindObjectOfType<TypicalDay>();
-            Screen.ButtonPushed();
-            Data.isIntroductionover = true;
+            gameObject.SetActive(false);
+            Screen.SetActive(false);
+            // computer.Pressed();
+            
         }
     }
 }

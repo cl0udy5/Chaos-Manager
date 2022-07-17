@@ -10,6 +10,8 @@ public class Outcome : ScriptableObject
     public string[] ChaoticOutcomes = new string[11];
     public int[] OutcomesInGeneral = new int[11];
     public int day_iterator_i = 0;
+    public bool isChoosed;
+    public bool isIntroductionover;
 
     public void UrChaoticChoice()
     {

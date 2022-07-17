@@ -89,6 +89,7 @@ public class SituationScript : MonoBehaviour
                 Outcome_text.text = NonChaoticOutcomeText;
             }
         }
+        Data.isChoosed = true;
         Data.iterator_i += 1;
         cross.SetActive(true);
         leftbutton.interactable = false;

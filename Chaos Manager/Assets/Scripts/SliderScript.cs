@@ -16,7 +16,6 @@ public class SliderScript : MonoBehaviour
     void Start()
     {
         mainDay = FindObjectOfType<TypicalDay>();
-        SliderEndOfTheDay();
     }
 
     void Update()
@@ -25,7 +24,7 @@ public class SliderScript : MonoBehaviour
     }
     public void SliderEndOfTheDay()
     {
-        if(mainslider.value >= 20 && mainslider.value <= 32)
+        if(mainslider.value >= 18 && mainslider.value <= 33)
         {
             mainDay.GoodEnding();
         }

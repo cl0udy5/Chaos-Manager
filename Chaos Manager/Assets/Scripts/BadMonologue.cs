@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class DialogueScript : MonoBehaviour
+using UnityEngine.UI;
+
+public class BadMonologue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public AudioSource AlienSpeaking;
     public string[] lines;
     public float textSpeed;
-    public On_Off TheBeggining;
     private int index;
     [SerializeField] GameObject ParentScene;
     [Header("Timer")]
@@ -17,8 +18,9 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] GameObject AngryPhoto;
     [SerializeField] GameObject TellingPhoto;
     [SerializeField] GameObject AskingPhoto;
-    [SerializeField] TypicalDay Screen;
+    [SerializeField] GameObject Screen;
     [SerializeField] Outcome Data;
+    [SerializeField] Button on_off;
 
     public void Start()
     {
@@ -69,36 +71,25 @@ public class DialogueScript : MonoBehaviour
             {
                 case 1:
                     IdlePhoto.SetActive(false);
-                    AskingPhoto.SetActive(true);
+                    AngryPhoto.SetActive(true);
                     break;
-                case 6:
-                    AskingPhoto.SetActive(false);
-                    TellingPhoto.SetActive(true);
-                    break;
-                case 11:
-                    TellingPhoto.SetActive(false);
+                case 4:
+                    AngryPhoto.SetActive(false);
                     ShowingPhoto.SetActive(true);
                     break;
-                case 16:
+                case 7:
                     ShowingPhoto.SetActive(false);
-                    IdlePhoto.SetActive(true);
-                    break;
-                case 19:
-                    IdlePhoto.SetActive(false);
-                    AngryPhoto.SetActive(true);
+                    AskingPhoto.SetActive(true);
                     break;
             }
             StartCoroutine(TypeLine());
         }
         else
         {
-            TheBeggining = FindObjectOfType<On_Off>();
-            gameObject.SetActive(false);
+            on_off.interactable = false;
             ParentScene.SetActive(false);
-            TheBeggining.Pressed();
-            Screen = FindObjectOfType<TypicalDay>();
-            Screen.ButtonPushed();
-            Data.isIntroductionover = true;
+            gameObject.SetActive(false);
+            Screen.SetActive(false);
         }
     }
 }
